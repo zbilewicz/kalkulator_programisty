@@ -1,0 +1,114 @@
+* {
+  outline: 0;
+  font-family: sans-serif
+}
+body {
+  background-color: #fafafa;
+}
+.container {
+  width: 500px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.dropdown {
+  width: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  text-align: left;  
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px;   
+}
+.dropdown .wybory{
+    padding: 0;
+    list-style: none
+}
+.dropdown:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown:active {
+    background-color: #f8f8f8
+}
+.dropdown .wybory{
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdown .wybory li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.dropdown .wybory li:hover {
+    background-color: #f2f2f2
+}
+.dropdown .wybory li:active {
+    background-color: #e2e2e2
+}
+.dropdown.active:hover,
+.dropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 2px 2px 0 0;
+    background-color: #f8f8f8
+}
+.arrow {
+/*   border: solid grey;
+  border-width: 0 2px 2px 0;
+  padding: 5px;
+  transition: all .2s ease;
+  margin-right:5px; 
+  display: inline-block;
+  */
+  float: right;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+}
+.bar
+{
+    top:.5rem;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color: #efefef;
+    display: inline-block;
+    transition: all .2s ease;
+    background: grey;
+
+}
+#left-bar
+{
+      left: 0;
+      transform: rotate(45deg);
+  
+}
+#right-bar
+{
+  right: 0;
+  transform: rotate(-45deg);
+}
+.up #left-bar
+{
+    transform: rotate(-45deg);
+} 
+.up #right-bar
+{
+    transform: rotate(45deg);
+}

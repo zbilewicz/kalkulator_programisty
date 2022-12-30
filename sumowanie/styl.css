@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+*{
+  font-family: 'Overpass Mono', monospace;
+}
+#strona
+{
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+	justify-content: space-around;
+	align-items: center;
+}
+body
+{
+background-color:white;  
+}
+main
+{
+/* display: flex;
+flex-wrap:wrap; */
+font-family: Asap,sans-serif;
+}
+#obliczenia
+{
+  padding:5px 5px 15px;
+  width: 80%;
+  padding-left: 15px;
+  margin: auto;
+  background-color:#fcf9f4 ;
+}
+#sumowanie
+{
+  min-width:300px;
+  /* min-height:; */
+  z-index: 9;
+  width: 50%;
+  border-right: 4px dashed #a76612;
+}
+h1 {
+    /* min-width:200px; */
+    font-size: 38px;
+    color: #efa84b;
+    font-family: Arial Black, Gadget, sans-serif;
+    text-shadow: #a76612 2px 1.5px 1px;
+    margin-left: 0px;
+    letter-spacing: 6px;
+  }
+.container {
+  width: 500px;
+}
+.dropdown {
+  width: 155px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: left;  
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px;   
+}
+.dropdown .wybory{
+    padding: 0;
+    list-style: none
+}
+.dropdown:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown:active {
+    background-color: #f8f8f8
+}
+.dropdown .wybory{
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdown .wybory li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.dropdown .wybory li:hover {
+    background-color: #ededed
+}
+.dropdown .wybory li:active {
+    background-color: #e2e2e2
+}
+.dropdown.active:hover,
+.dropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 2px 2px 0 0;
+    background-color: #ededed;
+}
+.arrow {
+  float: right;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+}
+.bar
+{
+    top:.5rem;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color: #efefef;
+    display: inline-block;
+    transition: all .2s ease;
+    background: grey;
+
+}
+#left-bar
+{
+      left: 0;
+      transform: rotate(45deg);
+  
+}
+#right-bar
+{
+  right: 0;
+  transform: rotate(-45deg);
+}
+.up #left-bar
+{
+    transform: rotate(-45deg);
+} 
+.up #right-bar
+{
+    transform: rotate(45deg);
+}
+.numbers {
+    height: 35px;
+    border: 1px solid #ccc;
+  box-shadow: 0 0 1px rgb(204, 204, 204);
+  border-radius:4px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    width: 150px;
+}
+ .numbers:focus {
+    background-color: #ededed;
+    outline: none;
+}
+#error
+{
+    color: red;
+    text-align: left;
+    box-sizing: border-box;
+}
+button{
+  color: #FFF !important;
+    background: #E3A85B;
+    padding: 15px 30px 19px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    border: none;
+    text-transform: uppercase;
+    transition:all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -2px 0 rgb(0 0 0 / 15%);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 -2px 0 rgb(0 0 0 / 15%);
+}
+
+button:hover {
+   background: #CF8B3E;
+  cursor:pointer; 
+  text-align: center;
+}

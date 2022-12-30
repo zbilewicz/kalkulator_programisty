@@ -1,0 +1,20 @@
+.numbers {
+    height: 25px;
+    border: 1px solid #ccc;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    width: 200px;
+}
+ .numbers:focus {
+    background-color: #ededed;
+    outline: none;
+}
+#error
+{
+    color: red;;
+    text-align: left;
+    box-sizing: border-box;
+}

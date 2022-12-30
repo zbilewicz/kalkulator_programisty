@@ -1,0 +1,173 @@
+<header>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</header>
+<nav class="navbar">
+  <div class="logo">
+    <a class="logo" href="#home"><img src="18010874261603537440-128.png" width="60" height="60">Kalkulator programisty</a>
+  </div>
+</nav>
+<body>
+<main>
+<div id="strona">
+<div class="obliczenia">
+  <div class="dzialanie" id="sumowanie">
+      <h1>Sumowanie</h1>
+      <p id="system-wybor">system: </p>
+      <div class="container" id="container-sumowanie">
+        
+          <div class="dropdown" id="dropdown-sumowanie"> 
+            
+            <div class="select">
+              
+              <span class="number">2</span>
+               <span class="arrow" id="arrow-sumowanie">
+                  <i class="bar" id="left-bar"></i>
+                  <i class="bar" id="right-bar"></i>
+               </span>
+            </div>
+            
+          <ul name="wybory" id="wybory" class="wybory">
+            
+              <li class="system" value="binarne" >2 </li>
+              <li class="system" value="oktalny">8</li>
+              <li class="system" value="hexadecymalny">16</li>
+            </ul>
+        </div>
+        </div>
+        <div class="input-sumowanie">
+          <input type ="text" class="numbers" id="liczba1-sumowanie" placeholder="1 liczba.."> + 
+          <input type ="text" class="numbers" id="liczba2-sumowanie" placeholder="2 liczba..">
+          <button id="button-sumowanie">dodaj</button>
+          <span id="error-sumowanie"></span>
+      <div class="wynik-sumowanie">
+          <span id="wynik">wynik:</span>
+          <p class="wyniki" id="suma"></p>
+      </div>
+          
+        </div>
+  
+  
+  </div>
+    <div class="dzialanie" id="odejmowanie">
+        <h1>Odejmowanie</h1>
+        <p id="system-wybor">system: </p>
+        <div class="container">
+          
+            <div class="dropdown" id="dropdown-odejmowanie"> 
+              
+              <div class="select">
+                
+                <span class="number">2</span>
+                 <span class="arrow" id="arrow-odejmowanie">
+                    <i class="bar" id="left-bar"></i>
+                    <i class="bar" id="right-bar"></i>
+                 </span>
+              </div>
+              
+            <ul name="wybory" id="wybory" class="wybory">
+              
+                <li class="system" value="binarne" >2 </li>
+                <li class="system" value="oktalny">8</li>
+                <li class="system" value="hexadecymalny">16</li>
+              </ul>
+          </div>
+          </div>
+          <div class="input-odejmowanie">
+            <input type ="text" class="numbers" id="liczba1-odejmowanie" placeholder="1 liczba.."> -
+            <input type ="text" class="numbers" id="liczba2-odejmowanie" placeholder="2 liczba..">
+            <button id="button-odejmowanie">odejmij</button>
+            <span id="error-odejmowanie"></span>
+        <div class="wynik-odejmowanie">
+            <span id="wynik">wynik:</span>
+            <p class="wyniki" id="roznica"></p>
+        </div>
+            
+          </div>
+    
+    </div>
+    </div>
+<div class="obliczenia">
+<div class="dzialanie" id="mnozenie">
+        <h1>Mnożenie</h1>
+        <p id="system-wybor">system: </p>
+        <div class="container">
+          
+            <div class="dropdown" id="dropdown-mnozenie"> 
+              
+              <div class="select">
+                
+                <span class="number">2</span>
+                 <span class="arrow" id="arrow-mnozenie">
+                    <i class="bar" id="left-bar"></i>
+                    <i class="bar" id="right-bar"></i>
+                 </span>
+              </div>
+              
+            <ul name="wybory" id="wybory" class="wybory">
+              
+                <li class="system" value="binarne" >2 </li>
+                <li class="system" value="oktalny">8</li>
+                <li class="system" value="hexadecymalny">16</li>
+              </ul>
+          </div>
+          </div>
+          <div class="input-mnozenie">
+            <input type ="text" class="numbers" id="liczba1-mnozenie" placeholder="1 liczba.."> *
+            <input type ="text" class="numbers" id="liczba2-mnozenie" placeholder="2 liczba..">
+            <button id="button-mnozenie">pomnóż</button>
+            <span id="error-mnozenie"></span>
+        <div class="wynik-mnozenie">
+            <span id="wynik">wynik:</span>
+            <p class="wyniki" id="iloczyn"></p>
+        </div>
+            
+          </div>
+    
+    
+    </div>
+<div class="dzialanie" id="dzielenie">
+        <h1>Dzielenie</h1>
+        <p id="system-wybor">system: </p>
+        <div class="container">
+          
+            <div class="dropdown" id="dropdown-dzielenie"> 
+              
+              <div class="select">
+                
+                <span class="number">2</span>
+                 <span class="arrow" id="arrow-dzielenie">
+                    <i class="bar" id="left-bar"></i>
+                    <i class="bar" id="right-bar"></i>
+                 </span>
+              </div>
+              
+            <ul name="wybory" id="wybory" class="wybory">
+              
+                <li class="system" value="binarne" >2 </li>
+                <li class="system" value="oktalny">8</li>
+                <li class="system" value="hexadecymalny">16</li>
+              </ul>
+          </div>
+          </div>
+          <div class="input-dzielenie">
+            <input type ="text" class="numbers" id="liczba1-dzielenie" placeholder="1 liczba.."> /
+            <input type ="text" class="numbers" id="liczba2-dzielenie" placeholder="2 liczba..">
+            <button id="button-dzielenie">podziel</button>
+            <span id="error-dzielenie"></span>
+        <div class="wynik-dzielenie">
+            <span id="wynik">wynik:</span>
+            <p class="wyniki" id="iloraz"></p>
+        </div>
+            
+          </div>
+    
+    
+    </div>
+      </div>
+</div>
+    </div>
+</main>
+
+<script src="kod.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</body>
